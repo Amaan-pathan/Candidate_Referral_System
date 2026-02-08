@@ -13,8 +13,7 @@ A modern, full-stack application for managing candidate referrals efficiently. T
 - [Running the Application](#running-the-application)
 - [Project Structure](#project-structure)
 - [Assumptions & Limitations](#assumptions--limitations)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
+
 
 ---
 
@@ -316,7 +315,7 @@ No `.env` file needed - the API URL is configured in `src/api/candidateApi.js`.
 
 ## 🎮 Running the Application
 
-### Option 1: Run Locally (Development)
+### Run Locally (Development)
 
 #### Terminal 1 - Start Backend
 ```bash
@@ -347,22 +346,6 @@ Open your browser and navigate to: `http://localhost:5173/`
 
 ---
 
-### Option 2: Build for Production
-
-#### Build Frontend
-```bash
-cd frontend
-npm run build
-```
-
-This creates an optimized build in the `frontend/dist` directory.
-
-#### Preview Production Build
-```bash
-npm run preview
-```
-
----
 
 ## 📁 Project Structure
 
@@ -470,46 +453,6 @@ Candidate_Referral_System/
 - Pagination and infinite scroll
 - Bulk import from CSV
 - Email templates and automation
-
----
-
-## 🚀 Deployment
-
-### Backend Deployment (Render.com)
-
-The backend is already deployed at:
-```
-https://candidate-referral-system-backend.onrender.com
-```
-
-**Steps taken:**
-1. Connected GitHub repository to Render
-2. Set environment variables in Render dashboard
-3. Configured MongoDB Atlas for cloud database
-4. Auto-deployment on push to main branch
-
----
-
-### Frontend Deployment (Vercel/Netlify/GitHub Pages)
-
-To deploy the frontend:
-
-**Option 1: Vercel**
-```bash
-npm install -g vercel
-cd frontend
-vercel
-```
-
-**Option 2: Netlify**
-```bash
-npm run build
-# Drag and drop the dist folder to Netlify
-```
-
-**Option 3: GitHub Pages**
-- Update `vite.config.js` with correct base path
-- Push build artifacts to `gh-pages` branch
 
 ---
 
