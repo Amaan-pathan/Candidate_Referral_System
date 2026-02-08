@@ -42,7 +42,7 @@ const CandidateCard = ({ candidate, onUpdate, onDelete }) => {
 
   const openResume = () => {
     if (candidate.resumeUrl) {
-      window.open(`http://localhost:5050/${candidate.resumeUrl}`, "_blank");
+      window.open(`https://candidate-referral-system-backend.onrender.com/${candidate.resumeUrl}`, "_blank");
     }
   };
 

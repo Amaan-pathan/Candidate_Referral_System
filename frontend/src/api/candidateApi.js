@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create Axios instance
 const API = axios.create({
-  baseURL: "http://localhost:5050"
+  baseURL: "https://candidate-referral-system-backend.onrender.com"
 });
 
 // Fetch all candidates
